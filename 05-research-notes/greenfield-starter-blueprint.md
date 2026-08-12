@@ -49,11 +49,31 @@ source_format: "Markdown alignment derived from PDF blueprint"
 
 ## Approval and Change Record
 
-| Version | Date | Change | Decision status |
-| --- | --- | --- | --- |
-| 0.1 | July 23, 2026 | Greenfield direction and starter scaffold established | Accepted |
-| 1.0 | July 23, 2026 | Enterprise printable blueprint created | Superseded |
-| 1.1 | July 24, 2026 | Repository/tooling state aligned; Starter two-environment limit incorporated; serial verification adopted | Accepted |
+| **Version** | **Date**        | **Change**                                                                                                                                                                                           | **Decision Status**       |
+| ----------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------- |
+| 0.1         | July 23, 2026   | Greenfield direction and starter scaffold established                                                                                                                                                | Accepted                  |
+| 1.0         | July 23, 2026   | Enterprise printable blueprint created as the initial governed implementation plan                                                                                                                   | Superseded                |
+| 1.1         | July 24, 2026   | Repository and tooling state aligned; Starter two-environment limit incorporated; serial verification strategy adopted                                                                               | Accepted                  |
+| 1.2         | August 11, 2026 | Phase 00 baseline completed; `master` + rotating `dev` environment topology finalized; secret-safety controls established; locale compatibility resolved; stale environment documentation reconciled | Accepted                  |
+| 1.3         | August 11, 2026 | Phase 01 — Content Strategy + Route Contract opened; Batch 01.1 Content Strategy Foundation established as the next active workstream                                                                | **Current / In Progress** |
+
+### Current approved direction
+
+The project has now moved beyond its original blueprint assumptions. The operative architecture is the **two-environment model** with protected `master` and a rotating `dev` environment used for controlled serial verification—not the older persistent `master → dev → verification` topology documented in the superseded blueprint. The project remains governed by the sequence **content strategy → route contract → UI/data contracts → Contentful integration**.
+
+**Current project state:**
+
+```text
+Phase 00 — COMPLETE
+Phase 01 — ACTIVE
+Batch 01.1 — Content Strategy Foundation
+Contentful bootstrap migration — BLOCKED / NOT RUN
+Seed content — NOT STARTED
+```
+
+The Phase 01 intake material is intended to establish mission, audiences, content pillars, route intent, CMS/code ownership, fixture requirements, SEO direction, localization, and privacy constraints before downstream modeling begins.
+
+This makes **v1.3 the current working record** while preserving v1.2 as the approved Phase 00 closeout baseline.
 
 ## Current-State Snapshot
 
